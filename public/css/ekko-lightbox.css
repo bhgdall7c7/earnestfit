@@ -1,0 +1,127 @@
+.ekko-lightbox-container {
+	position:relative
+}
+.ekko-lightbox-container>div.ekko-lightbox-item {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	right:0;
+	width:100%
+}
+.ekko-lightbox iframe {
+	width:100%;
+	height:100%
+}
+.ekko-lightbox-nav-overlay {
+
+}
+.ekko-lightbox-nav-overlay a {
+	display:block;
+	position:absolute; top:50%; left:-150px; width:85px; height:25px;
+	z-index:9999999999;
+	background:url("../page/artist_light_prev.png") 0 0 no-repeat;
+}
+.ekko-lightbox-nav-overlay a>* {
+	-ms-flex-positive:1;
+	flex-grow:1
+}
+.ekko-lightbox-nav-overlay a>:focus {
+	outline:none
+}
+.ekko-lightbox-nav-overlay a span {
+	display:none;
+}
+.ekko-lightbox-nav-overlay a:last-child{
+	position:absolute; left:auto; right:-150px; 
+	background:url("../page/artist_light_next.png") 0 0 no-repeat;
+}
+.ekko-lightbox-nav-overlay a:hover {
+	text-decoration:none
+}
+.ekko-lightbox-nav-overlay a:focus {
+	outline:none
+}
+.ekko-lightbox-nav-overlay a.disabled {
+	cursor:default;
+	visibility:hidden
+}
+.ekko-lightbox a:hover {
+	text-decoration:none
+}
+.ekko-lightbox .modal-dialog {
+	display:none
+}
+.ekko-lightbox .modal-footer {
+	text-align:left
+}
+.ekko-lightbox-loader {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	right:0;
+	width:100%;
+	display:-ms-flexbox;
+	display:flex;
+	-ms-flex-direction:column;
+	flex-direction:column;
+	-ms-flex-pack:center;
+	justify-content:center;
+	-ms-flex-align:center;
+	align-items:center
+}
+.ekko-lightbox-loader>div {
+	width:40px;
+	height:40px;
+	position:relative;
+	text-align:center
+}
+.ekko-lightbox-loader>div>div {
+	width:100%;
+	height:100%;
+	border-radius:50%;
+	background-color:#fff;
+	opacity:.6;
+	position:absolute;
+	top:0;
+	left:0;
+	animation:a 2s infinite ease-in-out
+}
+.ekko-lightbox-loader>div>div:last-child {
+	animation-delay:-1s
+}
+.modal-dialog .ekko-lightbox-loader>div>div {
+	background-color:#333
+}
+@keyframes a {
+	0%,to {
+		transform:scale(0);
+		-webkit-transform:scale(0)
+	}
+	50% {
+		transform:scale(1);
+		-webkit-transform: scale(1)
+	}
+}
+.modal-content{border-radius:0;}
+.modal-dialog{}
+.modal-content{background-color:transparent;     box-shadow: 0 0 0 rgba(0,0,0,0); border:0 none;}
+.modal-content .modal-header{border-bottom:0 none; height:20px; padding:0;}
+.modal-content .modal-header .close{opacity:1;}
+.modal-content .modal-header .close span{display:block; font-size:0; background:url("../page/artist_light_close.png") 0 0 no-repeat; width:69px; height:19px;}
+.modal-content .modal-body{background-color:#fff;  box-shadow: 0 3px 9px rgba(0,0,0,.5);}
+@media screen and (max-width:768px) {
+	.ekko-lightbox-nav-overlay a {
+		display:block;
+		position:absolute; top:50%; left:5px; width:18px; height:35px; margin-top:-17px;
+		z-index:9999999999;
+		background:url("../page/artist_light_mo_prev.png") 0 0 no-repeat;
+	}
+	.ekko-lightbox-nav-overlay a:last-child{
+	position:absolute; left:auto; right:5px; 
+	background:url("../page/artist_light_mo_next.png") 0 0 no-repeat;
+	}
+	.modal-dialog{margin:0 auto; padding-top:20px;}
+	.modal-body{padding:10px;}
+}
