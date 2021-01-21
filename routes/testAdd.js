@@ -6,6 +6,12 @@ module.exports.leaders = function(req,res){
 module.exports.leaderdetail = function(req,res){
     res.render('leaderdetail');
 }
+module.exports.leaderdetailJinhyung = function(req,res){
+    res.render('leaderdetailJinhyung');
+}
+module.exports.leaderdetailJunho = function(req,res){
+    res.render('leaderdetailJunho');
+}
 module.exports.signup = function(req,res){
     res.render('signup');
 }

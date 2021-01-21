@@ -30,6 +30,8 @@ app.use('/users', usersRouter);
 app.get('/main', testRouter.main);
 app.get('/leaders', testRouter.leaders);
 app.get('/leaderdetail', testRouter.leaderdetail);
+app.get('/leaderdetailJinhyung', testRouter.leaderdetailJinhyung);
+app.get('/leaderdetailJunho', testRouter.leaderdetailJunho);
 app.get('/signup', testRouter.signup);
 app.get('/signin', testRouter.signin);
 

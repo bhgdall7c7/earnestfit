@@ -121,7 +121,7 @@
               <a href="">
                 <button type="button" class="topmenu" data-hover="dropdown" aria-haspopup="true"
                   aria-expanded="false">
-                  <strong style="color:black;">COMPANY</strong>
+                  <strong class="scrollfontchange" style="color:black;">COMPANY</strong>
                 </button>
               </a>
               <ul class="dropdown-menu" role="menu" aria-labelledby="menu01">
@@ -135,7 +135,7 @@
               <a href="leaders">
                 <button type="button" class="topmenu" data-hover="dropdown" aria-haspopup="true"
                   aria-expanded="false">
-                  <strong style="color:black;">LEADERS</strong>
+                  <strong class="scrollfontchange" style="color:black;">LEADERS</strong>
                 </button>
               </a>
           </li>
@@ -144,7 +144,7 @@
               <a href="">
                 <button type="button" class="topmenu" data-hover="dropdown" aria-haspopup="true"
                   aria-expanded="false">
-                  <strong style="color:black;">COURSE</strong>
+                  <strong class="scrollfontchange" style="color:black;">COURSE</strong>
                 </button>
               </a>
               <ul class="dropdown-menu" role="menu" aria-labelledby="menu03">
@@ -159,7 +159,7 @@
               <a href="">
                 <button type="button" class="topmenu" data-hover="dropdown" aria-haspopup="true"
                   aria-expanded="false">
-                  <strong style="color:black;">NOTICE</strong>
+                  <strong class="scrollfontchange" style="color:black;">NOTICE</strong>
                 </button>
               </a>
               <ul class="dropdown-menu" role="menu" aria-labelledby="menu04">
@@ -173,7 +173,7 @@
               <a href="">
                 <button type="button" class="topmenu" data-hover="dropdown" aria-haspopup="true" aria-expanded="false"
                   href="#">
-                  <strong style="color:black;">SUPPORT</strong>
+                  <strong class="scrollfontchange" style="color:black;">SUPPORT</strong>
                 </button>
               </a>
             </div>
@@ -183,7 +183,7 @@
               <a href="" target="_blank">
                 <button type="button" class="topmenu" data-hover="dropdown" aria-haspopup="true" aria-expanded="false"
                   href="#">
-                  <strong style="color:black;">ACCOUNT</strong>
+                  <strong class="scrollfontchange" style="color:black;">ACCOUNT</strong>
                 </button>
               </a>
             </div>
@@ -257,14 +257,14 @@
               </a>
             </div>
             <div class="col-lg-4 col-md-4 col-sm-4 pic_list">
-              <a href="">
+              <a href="leaderdetailJunho">
                 <img
                   src="images/junho/junho_face.png"
                   alt="" class="img-responsive" /> <span class="name">Jun Ho</span>
               </a>
             </div>
             <div class="col-lg-4 col-md-4 col-sm-4 pic_list">
-              <a href="">
+              <a href="leaderdetailJinhyung">
                 <img
                 src="images/jinhyung/jinhyung_face.png"
                   alt="" class="img-responsive" /> <span class="name">Jin Hyung</span>
@@ -456,12 +456,14 @@
         if (sy >= changeHeaderOn) {
           classie.add(header, 'navbar-shrink');
           classie.add(header, 'move-navbar');
+          $(".scrollfontchange").css("color","white");
           $('.scroll-top').removeClass('hidden-sm hidden-xs');
           $('.scroll-top').fadeIn(500);
         }
         else {
           classie.remove(header, 'navbar-shrink');
           classie.remove(header, 'move-navbar');
+          $(".scrollfontchange").css("color","black");
           $('.scroll-top').fadeOut(500, function () {
             $('.scroll-top').addClass('hidden-sm hidden-xs');
           });
