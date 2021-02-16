@@ -13,7 +13,7 @@ nav/*!
 body {
   overflow-x: hidden;
 }
-div,p,span,li,table,th,td{font-family: 'Noto Sans','NanumSquare', Helvetica, Arial, sans-serif;}
+div,p,span,li,table,th,td,title{font-family: 'Noto Sans','NanumSquare', Helvetica, Arial, sans-serif;}
 h1,h2,h3,h4,h5,h6 {
   font-family: 'Noto Sans','NanumSquare', Helvetica, Arial, sans-serif;
   font-weight: bold;
@@ -361,20 +361,20 @@ Margin Shortcodes
 
 @media (max-width:1270px) {
 .top_nav button{padding:19.5px 11px;}
-.navbar-brand .logo_main{width:150px; height: 150px;}
-.navbar-brand .logo_sub{width:80px; height: 80px;}
+.navbar-brand .logo_main{width:180px; height: 60px;}
+.navbar-brand .logo_sub{width:180px; height: 60px;}
 }
 
 @media (max-width:1024px) {
 .top_nav button{padding:19.5px 8px;}
 .top_nav .dropdown-menu{left:87px;}
-.navbar-brand .logo_main{width:120px; height: 120px;}
-.navbar-brand .logo_sub{width:80px; height: 80px;}
+.navbar-brand .logo_main{width:180px; height: 60px;}
+.navbar-brand .logo_sub{width:180px; height: 60px;}
 }
 @media (max-width:910px) {
 .top_nav button{padding:19.5px 5px; font-size:13px;}
-.navbar-brand .logo_main{width:80px; height: 80px;}
-.navbar-brand .logo_sub{width:80px;}
+.navbar-brand .logo_main{width:180px; height: 60px;}
+.navbar-brand .logo_sub{width:180px; height: 60px;}
 }
 
 /* 메뉴 토글버튼 */
@@ -383,7 +383,7 @@ Margin Shortcodes
 		background:rgba(0,0,0,0.7);
 	}
 	.navbar-default .navbar-brand{margin:15px;}
-	.navbar-default .navbar-brand img{width:80px;}
+	.navbar-default .navbar-brand img{width:180px;}
 	.top_nav{background:url("../img/drop_arrow_up.png") right 25px no-repeat;}
 	.top_nav.open{background:url("../img/drop_arrow_down.png") right 25px no-repeat;}
 	.top_nav .topmenu{display:block; width:100%; text-align:left; border-bottom:1px solid #252525;}
