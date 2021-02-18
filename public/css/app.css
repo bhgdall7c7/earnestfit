@@ -313,7 +313,7 @@ Margin Shortcodes
 /* 상단 메뉴 커스터마이징 */
 .top_nav{}
 .top_nav button{ position: relative; display: block; font-size:16px; color:#fff; padding:19.5px 24px; background-color: transparent; color:#fff; border:0 none; outline-style:none; font-weight:normal; letter-spacing:1px;}
-.top_nav button strong{font-weight:normal;}
+.top_nav button strong{font-weight:bold;}
 .navbar .navbar-nav:hover li .top_nav:hover button strong{border-bottom:2px solid #fff; padding-bottom:20px;}
 .top_nav.open button{}
 .dropdown-menu{

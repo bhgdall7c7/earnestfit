@@ -45,7 +45,7 @@
 #main_artists{padding:100px 0 70px; position:relative;}
 #main_artists .stick_line{position:absolute; top:-70px; left:50%;}
 #main_artists .artists_tit{}
-#main_artists .artists_tit h3{font-size:30px; line-height:30px; color:#000; font-weight:normal; text-align:center;}
+#main_artists .artists_tit h3{font-size:38px; line-height:30px; color:#000; font-weight:normal; text-align:center;}
 #main_artists .pic_list{background-color:#fff; border:0 none; padding:0 20px; position:relative; margin-top:70px;}
 #main_artists .pic_list a{}
 #main_artists .pic_list img{margin:0 auto;}
@@ -59,8 +59,8 @@
 }
 #main_pr{padding:70px 0; }
 #main_pr .pr_tit{}
-#main_pr .pr_tit h3{font-size:30px; line-height:30px; color:#000; font-weight:normal; text-align:center;}
-#main_pr .pr_box{max-width:900px; margin:0 auto;}
+#main_pr .pr_tit h3{font-size:38px; line-height:30px; color:#000; font-weight:normal; text-align:center;}
+#main_pr .pr_box{max-width:900px; margin:50px auto;}
 #main_pr .pr_notice{margin-top:60px; position:relative;}
 #main_pr .pr_notice .tit{font-size:25px; line-height:25px; color:#585858; padding-bottom:20px; background:url("../images/main_title_line.jpg") 0 bottom no-repeat;}
 #main_pr .pr_notice .notice_list{}
