@@ -34,6 +34,7 @@ app.get('/leaderdetailJinhyung', testRouter.leaderdetailJinhyung);
 app.get('/leaderdetailJunho', testRouter.leaderdetailJunho);
 app.get('/signup', testRouter.signup);
 app.get('/signin', testRouter.signin);
+app.get('/makecodes', testRouter.makecodes);
 
 
 console.log(__dirname+app);

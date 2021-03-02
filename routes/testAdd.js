@@ -22,3 +22,7 @@ module.exports.signin = function(req,res){
 module.exports.main = function(req,res){
     res.render('main');
 }
+
+module.exports.makecodes = function(req,res){
+    res.render('makecodes');
+}
